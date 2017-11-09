@@ -1,0 +1,107 @@
+
+#work_header_wrapper {
+	width: 100%;
+	height: 550px;
+	margin: 100px 0px 0px 0px;
+	position: relative;
+	
+	background: url(../Images/work_background.jpg); 
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-attachment: fixed;
+	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+	line-height: 550px;
+	
+	filter: url(grayscale.svg); /* Firefox 4+ */
+	filter: gray; /* IE 6-9 */
+	-webkit-filter: grayscale(25%);
+	-moz-filter: grayscale(25%);
+	-ms-filter: grayscale(25%);
+	-o-filter: grayscale(25%);
+	filter: grayscale(25%);
+}
+
+#work_inner_wrapper div {
+	padding: 75px 30px 30px 30px;
+}
+
+#work_inner_wrapper i {
+	width: 100%;
+	height: auto;
+	display: inline-block;
+	
+	font-weight: bold;
+	font-size: 64px;
+}
+
+#work_inner_wrapper p {
+	display: inline-block;
+	margin: 35px 0px 75px 0px;
+	
+	text-align: left;
+}
+
+#work_inner_wrapper button {
+	max-width: 81.25%;
+	height: 45px;
+	padding: 0px 0px;
+	display: inline-block;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	bottom: 0px;
+	
+	background: #212121;
+	color: #FFFFFF;
+	font-size: 16px;
+	line-height: 45px;
+	text-shadow: 1px 1px 1px #1a1a1a;
+	
+	border: 1px solid #1a1a1a;
+}
+
+#work_inner_wrapper button:hover {
+	cursor: pointer;
+	
+	-webkit-box-shadow: 0px 3px 5px #9E9E9E;
+	-moz-box-shadow: 0px 3px 5px #9E9E9E;
+	box-shadow: 0px 3px 5px #9E9E9E;
+	
+	-webkit-transition: all 200ms ease-out;
+    -moz-transition: all 200ms ease-out;
+    -o-transition: all 200ms ease-out;
+    -ms-transition: all 200ms ease-out;
+    transition: all 200ms ease-out;
+}
+
+#work_inner_wrapper button:focus {
+	height: 44px;
+	bottom: 0px;
+	
+	-webkit-box-shadow: 0px 1px 1px #9E9E9E;
+	-moz-box-shadow: 0px 1px 1px #9E9E9E;
+	box-shadow: 0px 1px 1px #9E9E9E;
+}
+
+
+@media only screen and (max-width: 976px) {
+	#work_header_wrapper {
+		margin-top: 25px;
+	}
+	
+	#work_inner_wrapper div {
+		max-width: 480px;
+	}
+	
+	#work_inner_wrapper button {
+		max-width: 87.5%;
+	}
+}
+

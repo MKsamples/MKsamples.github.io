@@ -1,0 +1,32 @@
+
+#about_wrapper {
+	margin-top: 100px;
+}
+
+#about_image {
+	padding: 200px 0px;
+	
+	background: url(../Images/about_background.jpg); 
+	background-repeat: no-repeat;
+	background-position: top right;
+
+	filter: url(grayscale.svg); /* Firefox 4+ */
+	filter: gray; /* IE 6-9 */
+	-webkit-filter: grayscale(25%);
+	-moz-filter: grayscale(25%);
+	-ms-filter: grayscale(25%);
+	-o-filter: grayscale(25%);
+	filter: grayscale(25%);
+}
+
+#about_content {
+	padding: none;
+	padding: 10px 30px;
+}
+
+#about_content p {
+	text-indent: 20px;
+	
+	font-size: 15px;
+	line-height: 26px;
+}
