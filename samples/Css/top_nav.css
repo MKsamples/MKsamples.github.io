@@ -1,0 +1,43 @@
+
+#top_nav_wrapper {
+	width: 100%;
+	height: 75px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	
+	text-align: center;
+	line-height: 75px;
+}
+
+#lang_wrapper {
+	width: auto;
+	height: 100%;
+	padding: 0px 20px;
+	float: right;
+	
+	line-height: 75px;
+	color: #dc6e55;
+	
+	-moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+	box-sizing: border-box; 
+}
+
+#lang_wrapper span {
+	display: inline-block;
+	
+	color: #dc6e55;
+	font-size: 18px;
+}
+
+#lang_wrapper span:hover {
+	cursor: pointer;
+	color: #FAFAFA;
+	
+	-webkit-transition: all 100ms ease-out;
+    -moz-transition: all 100ms ease-out;
+    -o-transition: all 100ms ease-out;
+    -ms-transition: all 100ms ease-out;
+    transition: all 100ms ease-out;
+}
