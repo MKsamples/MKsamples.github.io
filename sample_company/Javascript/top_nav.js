@@ -28,16 +28,8 @@ $(window).scroll(function() {
 	}
 });
 
-function changePageLanguage($language) {
-	var url_split = window.location.href.split("/");
-	
-	var url = "";
-	
-	for (var i = 0; i < url_split.length - 1; i++) {
-		url += url_split[i] + "/";
-	}
-	
-	window.location.href = url + $language;
+function changePageLanguage(url) {
+	window.location.href = url;
 }
 
 function toggleNavDropdown($button, $dropdown, $delay) {
