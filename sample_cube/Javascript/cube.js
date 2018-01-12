@@ -10,6 +10,8 @@ function loadCubes() {
 	var width = screen.width;
 	var height = screen.height;
 	
+	if (height < 900) height = 900;
+	
 	load_width = width;
 	load_height = height;
 	
