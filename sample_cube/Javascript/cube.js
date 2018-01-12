@@ -7,8 +7,10 @@ $(document).ready(function() {
 });
 
 function loadCubes() {
-	var width = screen.width;
-	var height = screen.height;
+	var pixel_ratio = window.devicePixelRatio || 1;
+	
+	var width = screen.width * pixel_ratio;
+	var height = screen.height * pixel_ratio;
 	
 	if (height < 900) height = 900;
 	
