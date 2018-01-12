@@ -12,9 +12,6 @@ function loadCubes() {
 	
 	if (height < 900) height = 900;
 	
-	load_width = width;
-	load_height = height;
-	
 	var columns = Math.ceil(width / (cube_size + cube_margin));
 	var rows = Math.ceil(height / (cube_size + cube_margin));
 	
