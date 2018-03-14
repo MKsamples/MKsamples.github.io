@@ -1,0 +1,60 @@
+
+#footer {
+	width: 100%;
+	height: auto;
+	padding: 30px 30px;
+	
+	background: #131720;
+	text-align: center;
+}
+
+#footer .watermark span i {
+	font-size: 64px;
+	color: #1d2230;
+}
+
+#footer .watermark span span {
+	font-size: 24px;
+}
+
+#footer .watermark .watermark_sub {
+	line-height: 64px;
+	font-size: 18px;
+}
+
+#footer .container {
+	padding: 0px 0px;
+}
+
+#footer .container .row {
+	width: 100%;
+	padding: 40px 10px;
+
+	text-align: left;
+}
+
+#footer .container .row div {
+	padding: 0px 10px;
+}
+
+#footer .container .row span {
+	font-size: 15px;
+	color: #FAFAFA;
+}
+
+#footer .container .row span b {
+	font-weight: normal;
+	color: #00cc55;
+}
+
+#footer p {
+	width: 100%;
+	height: auto;
+	display: inline-block;
+	
+	font-family: "Roboto Condensed", sans-serif;
+	font-size: 16px;
+	color: #FAFAFA;
+}
+
+

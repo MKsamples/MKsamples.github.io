@@ -1,0 +1,73 @@
+
+#about_me {
+	width: 100%;
+	height: auto;
+	padding: 75px 20px;
+	position: relative;
+	overflow: hidden;
+}
+
+#about_me i {
+	width: auto;
+	height: auto;
+	position: absolute;
+	top: -562px;
+	left: -562px;
+	
+	color: #eff2f5;
+	font-size: 1028px;
+}
+
+#about_me h2 {
+	margin-bottom: 75px;	
+
+	color: #262e40;
+}
+
+#about_me .container {
+	padding: 0px 0px;
+}
+
+#about_me .container .col-lg-6 {
+	padding: 10px 20px;
+}
+
+#about_me .container span {
+	width: 100%;
+	height: auto;
+	display: inline-block;
+	margin: 25px 0px;
+	
+	color: #1c2230;
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+#about_me .container p {
+	color: #8f9dbc;
+	font-size: 16px;
+	line-height: 28px;
+}
+
+#about_me .container p b {
+	color: #8f9dbc;
+}
+
+#about_me .container p a {
+	text-decoration: underline;
+	font-weight: bold;
+	color: #8090b3;
+}
+
+#about_me .container p a:hover {
+	color: #60749f;
+	
+	-webkit-transition: color 75ms ease-in;
+	-moz-transition: color 75ms ease-in;
+	-o-transition: color 75ms ease-in;
+	-ms-transition: color 75ms ease-in;
+	transition: color 75ms ease-in;
+}
+
+

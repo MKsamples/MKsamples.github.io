@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head lang="et">
+	<title>Martin Kitsemägi portfoolio</title>
+
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no"/>
+	<meta name="description" content="
+		Olen lõpetanud 2016. aastal Tallinna Tehnikaülikooli informaatika erialal.
+		Hetkel otsin tööd pisiprojektide näol vabakutselise arendajana või jäädavat tööd mõnes Eesti IT-ettevõttes.
+		Minu peamine fookus on veebilehekülgede/veebiliideste kujundamisel ning nende välja arendamisel."/>
+	<meta name="keywords" content="Veebilehekülgede kujundamine ning arendamine, HTML, CSS, PHP, AJAX, JQuery, Javascript"/>
+	<meta name="author" content="Martin Kitsemägi"/>
+	
+	<link rel="icon" type="image/png" href="Images/icon.png"/>
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	
+	<link href="Css/font-awesome_5.0.8/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+	<link href="Css/bootstrap_4.0.0/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+	<link href="Css/bootstrap_4.0.0/css/bootstrap-grid.min.css" rel="stylesheet" type="text/css"/>
+	
+	<link href="Css/page.css" rel="stylesheet" type="text/css"/>
+	<link href="Css/top_nav.css" rel="stylesheet" type="text/css"/>
+	<link href="Css/about_me.css" rel="stylesheet" type="text/css"/>
+	<link href="Css/design_principles.css" rel="stylesheet" type="text/css"/>
+	<link href="Css/samples.css" rel="stylesheet" type="text/css"/>
+	<link href="Css/used_technologies.css" rel="stylesheet" type="text/css"/>
+	<link href="Css/footer.css" rel="stylesheet" type="text/css"/>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="Css/bootstrap_4.0.0/js/bootstrap.bundle.min.js"></script>
+	
+	<script src="Javascript/page.js"></script>
+	<script src="Javascript/top_nav.js"></script>
+	<script src="Javascript/used_technologies.js"></script>
+</head>
+<body>
+	<div id="page_wrapper" class="container-fluid">
+		<div id="cover"></div>
+		<div id="scroll_top" data-toggle="tooltip" data-placement="left" title="Tagasi üles">
+			<div>
+				<i class="fas fa-chevron-up"></i>
+			</div>
+		</div>
+	
+		<div id="top_nav" class="no_text_select">
+			<div id="nav">
+				<div class="container">
+					<span class="watermark no_text_select">
+						<span>
+							<span>MK</span>
+							<i class="fas fa-bullseye"></i>
+						</span>
+						<span class="watermark_sub">NÄIDISED</span>
+					</span>
+					
+					<ul id="nav_wide">
+						<li onclick="scrollToElement('#about_me')">Minust</li>
+						<li onclick="scrollToElement('#samples')">Näidised</li>
+						<li id="lang_dropdown" class="nav_dropdown">
+							Keel <i class="fas fa-sort-down"></i>
+							
+							<ul>
+								<a href=""><li>Eesti</li></a>
+								<a href=""><li>Inglise</li></a>
+							</ul>
+						</li>
+					</ul>
+					
+					<span id="nav_small">
+						<i class="fas fa-bars"></i>
+						
+						<ul id="mobi_dropdown">
+							<li onclick="scrollToElement('#about_me')">Minust</li>
+							<li onclick="scrollToElement('#samples')">Näidised</li>
+							
+							<div></div>
+							
+							<a href=""><li>Eesti keeles</li></a>
+							<a href=""><li>Inglise keeles</li></a>
+						</ul>
+					</span>
+				</div>
+			</div>
+			<div id="header">
+				<h1 id="header_title">MARTIN KITSEMÄGI PORTFOOLIO</h1>
+			</div>
+		</div>
+	
+		<div id="about_me">
+			<i class="fas fa-bullseye"></i>
+			
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 fade_block_l">
+						<span>Minust</span>
+						<p>
+							Hei, Martin siinpool. Olen lõpetanud 2016. aastal Tallinna Tehnikaülikooli informaatika erialal.
+							Hetkel otsin tööd pisiprojektide näol vabakutselise arendajana või jäädavat tööd mõnes Eesti IT-ettevõttes.
+							Minu peamine fookus on veebilehekülgede/veebiliideste kujundamisel ning nende välja arendamisel.
+							Hobi korras ning seoses ülikooliga, olen teostanud mitmeid andmebaaside ja veebirakendustega seotud projekte.
+							Püüan ennast alati arendada ja kursis olla parimate lahendustega oma valdkonnas.
+						</p>
+					</div>
+					<div class="col-lg-6 fade_block_r">
+						<span>Kuidas minuga ühendust saada?</span>
+						<p>
+							Parim viis minuga kontakti saada on e-kirja teel: <b>martin.kitsemmagi@gmail.com</b>.<br><br>
+							Samuti võid leida minu CV läbi <a href="https://www.cvkeskus.ee/m_cvs.php?op=preview&cv_id=1517632">cvkeskuse</a> või <a href="https://www.cv.ee/CVC/5800327.html">cv.ee</a>.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<div id="design_principles">
+			<div class="container">
+				<h2 id="design_principles_title"><b>Väärtused</b> mida hindan</h2>
+			
+				<div id="cards" class="container">
+					<div class="row">
+						<div class="col-lg-6 fade_block_l">
+							<div class="container">
+								<div class="row">
+									<div class="col-3">
+										<i class="fas fa-desktop"></i>
+									</div>
+									<div class="col-9">
+										<span>Responsiivne disain</span>
+										<p>Pean tähtsaks, et minu poolt loodud leheküljed näeksid head välja erineva suurusega ekraanidel.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 fade_block_r">
+							<div class="container">
+								<div class="row">
+									<div class="col-3">
+										<i class="far fa-user"></i>
+									</div>
+									<div class="col-9">
+										<span>Kasutajasõbralikud lahendused</span>
+										<p>Pööran tähelepanu kasutajaliideste kujundamisele, mida oleks lihtne kasutada ning mõista.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-6 fade_block_l">
+							<div class="container">
+								<div class="row">
+									<div class="col-3">
+										<i class="fas fa-mobile-alt"></i>
+									</div>
+									<div class="col-9">
+										<span>Ühilduvus erinevatel platvormidel</span>
+										<p>Loon lahendusi, mis töötavad erinevates brauserites ning platvormidel.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 fade_block_r">
+							<div class="container">
+								<div class="row">
+									<div class="col-3">
+										<i class="fab fa-pushed"></i>
+									</div>
+									<div class="col-9">
+										<span>Minimalistlik lähenemine</span>
+										<p>Hoian oma leheküljed müravabad ning keskendun ainult vajaliku informatsiooni kuvamisele.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="samples">
+			<div class="container line"></div>
+			<h2 id="samples_header">Näidised</h2>
+			<p>Heida pilk peale hiljuti teostatud lehekülgede näidistele</p>
+		
+			<div class="container no_text_select">
+				<div class="row">
+					<div class="col-lg-3 fade_block_t">
+						<div id="sample_company" class="container">
+							<div></div>
+							<a href="">
+								<span>Ettevõte</span>
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-3 fade_block_t">
+						<div id="sample_gallery" class="container">
+							<div></div>
+							<a href="">
+								<span>Galerii</span>
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-3 fade_block_t">
+						<div id="sample_animal_park" class="container">
+							<div></div>
+							<a href="">
+								<span>Loomapark</span>
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-3 fade_block_t">
+						<div id="sample_cube" class="container">
+							<div></div>
+							<a href="">
+								<span>The cube</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="used_technologies">
+			<div class="container">
+				<h2 id="used_technologies_title"><b>Tehnoloogiad</b> mida kasutan</h2>
+				<p id="used_technologies_description">Peamised vahendid, mis aitavad minu lahendusi ellu viia</p>
+				
+				<div id="logos" class="row justify-content-center no_text_select">
+					<div class="col-auto" data-toggle="tooltip" data-placement="top" title="HTML5">
+						<i class="fab fa-html5"></i>
+					</div>
+					<div class="col-auto" data-toggle="tooltip" data-placement="top" title="CSS3">
+						<i class="fab fa-css3-alt"></i>
+					</div>
+					<div class="col-auto" data-toggle="tooltip" data-placement="top" title="Javascript">
+						<i class="fab fa-js-square"></i>
+					</div>
+					<div class="col-auto" data-toggle="tooltip" data-placement="top" title="Font Awesome">
+						<i class="fab fa-font-awesome"></i>
+					</div>
+					<div class="col-auto" data-toggle="tooltip" data-placement="top" title="PHP">
+						<i class="fab fa-php"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="footer">
+			<div class="container">
+				<span class="watermark no_text_select">
+					<span>
+						<span>MK</span>
+						<i class="fas fa-bullseye"></i>
+					</span>
+					<span class="watermark_sub">NÄIDISED</span>
+				</span>
+				
+				<div class="row">
+					<div class="col-lg-6">
+						<span>Võta minuga ühendust: <b>martin.kitsemmagi@gmail.com</b></span>
+					</div>
+					<div class="col-lg-6">
+					</div>
+				</div>
+				
+				<p>2018</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
