@@ -28,6 +28,8 @@ var loaded = 0;
 
 var state = 0;
 
+var modifier = "";
+
 $(document).ready(function() {
 	$(window).on("resize", function() { 
 		if (($(window).width() + 17) > 976 && state == 1) {
@@ -106,7 +108,7 @@ function zoomImage($image) {
 	var image_name = $image.split("/");
 	image_name = image_name[image_name.length - 1];
 
-	$("#gallery_full").html("<img src='Images/Gallery/" + image_name + "'>");
+	$("#gallery_full").html("<img src='" + modifier + "Images/Gallery/" + image_name + "'>");
 }
 
 function setMinImages() {
@@ -128,7 +130,7 @@ function setMinImages() {
 			
 			var context = $(image_min_wrappers[i]).html();
 			
-			$(image_min_wrappers[i]).html(context + "<div><div style='background:url(Images/Gallery_resized/" + images[counter] + ");" +
+			$(image_min_wrappers[i]).html(context + "<div><div style='background:url(" + modifier + "Images/Gallery_resized/" + images[counter] + ");" +
 				"-webkit-background-size:100% 100%;-moz-background-size:100% 100%;-o-background-size:100% 100%;background-size:100% 100%;" +
 				"' onclick=\"zoomImage('" + images[counter] + "')\"></div></div>");
 
@@ -159,7 +161,7 @@ function loadMoreMinImages() {
 			
 			var context = $(location).html();
 			
-			$(location).html(context + "<div class='minImageFade' style='display:none'><div style='background:url(Images/Gallery_resized/" + images[counter] + ");" +
+			$(location).html(context + "<div class='minImageFade' style='display:none'><div style='background:url(" + modifier + "Images/Gallery_resized/" + images[counter] + ");" +
 				"-webkit-background-size:100% 100%;-moz-background-size:100% 100%;-o-background-size:100% 100%;background-size:100% 100%;" +
 				"' onclick=\"zoomImage('" + images[counter] + "')\"></div></div>");
 			
@@ -173,10 +175,10 @@ function loadMoreMinImages() {
 }
 
 function setPhotoImages() {
-	$(first_el).html("<img src=Images/Gallery_resized/" + images[images.length - 1] + ">");
+	$(first_el).html("<img src=" + modifier + "Images/Gallery_resized/" + images[images.length - 1] + ">");
 	
 	for (var i = 1; i < image_wrappers.length; i++) {
-		$(image_wrappers[i]).html("<div style='background:url(Images/Gallery_resized/" + images[i - 1] + ");" +
+		$(image_wrappers[i]).html("<div style='background:url(" + modifier + "Images/Gallery_resized/" + images[i - 1] + ");" +
 			"-webkit-background-size:100% 100%;-moz-background-size:100% 100%;-o-background-size:100% 100%;background-size:100% 100%;" +
 			"' onclick=\"zoomImage('" + images[i - 1] + "')\"></div>");
 	}
@@ -229,7 +231,7 @@ function galleryPutLast($element) {
 		$($element).css("z-index", "1");
 		
 		setTimeout(function() {
-			$($element).html	("<div style='background:url(Images/Gallery_resized/" + images[new_index] + ");" +
+			$($element).html	("<div style='background:url(" + modifier + "Images/Gallery_resized/" + images[new_index] + ");" +
 				"-webkit-background-size:100% 100%;-moz-background-size:100% 100%;-o-background-size:100% 100%;background-size:100% 100%;" +
 				"' onclick=\"zoomImage('" + images[new_index] + "')\"></div>");
 			last_el = $element;
@@ -255,7 +257,7 @@ function galleryPutFirst($element) {
 		$($element).css("z-index", image_wrappers.length);
 		
 		setTimeout(function() {
-			$($element).html("<div style='background:url(Images/Gallery_resized/" + images[new_index] + ");" +
+			$($element).html("<div style='background:url(" + modifier + "Images/Gallery_resized/" + images[new_index] + ");" +
 				"-webkit-background-size:100% 100%;-moz-background-size:100% 100%;-o-background-size:100% 100%;background-size:100% 100%;" +
 				"' onclick=\"zoomImage('" + images[new_index] + "')\"></div>");
 			first_el = $element;
