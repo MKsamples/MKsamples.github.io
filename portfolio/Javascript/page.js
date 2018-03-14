@@ -34,10 +34,6 @@ function textFade(id) {
 			$(this).text();
 		});
 	});
-	
-	/*setTimeout(function() {
-		$(id).html(text);
-	}, char_fade * $(id).children("span").length + char_transition);*/
 }
 
 function scrollToElement($element) {
@@ -126,23 +122,18 @@ $(window).scroll(function() {
 	} 
 	
 	if (!design_principles_listener && $(this).scrollTop() > getContainerTopPosition("#design_principles")) {
-		//textFade("#design_principles_title");
 		animateContainers("#design_principles");
 		
 		design_principles_listener = true;
 	}
 	
 	if (!samples_listener && $(this).scrollTop() > getContainerTopPosition("#samples")) {
-		//textFade("#samples_header");
 		animateContainers("#samples");
 		
 		samples_listener = true;
 	} 
 	
 	if (!used_technologies_listener && $(this).scrollTop() > getContainerTopPosition("#used_technologies")) {
-		//textFade("#used_technologies_title");
-		//textFade("#used_technologies_description");
-		
 		animateLogos();
 		
 		used_technologies_listener = true;
