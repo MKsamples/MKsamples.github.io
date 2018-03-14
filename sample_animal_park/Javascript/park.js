@@ -9,6 +9,8 @@ var mushroom_species = 25;
 
 var active_zone = false;
 
+var foreign_lang = false;
+
 $(window).scroll(function() {
 	if ($(this).scrollTop() > ($("#park_species_wrapper").offset().top - $(this).height())) {
 		if (active_zone) return;
@@ -41,7 +43,8 @@ $(document).ready(function() {
 		img_url = str_split[str_split.length - 1];
 		
 		
-		$("#image_zoom_cover").html("<img src='Images/Zoom_Images/" + img_url + "' />");
+		if (!foreign_lang) $("#image_zoom_cover").html("<img src='Images/Zoom_Images/" + img_url + "' />");
+		else $("#image_zoom_cover").html("<img src='../Images/Zoom_Images/" + img_url + "' />");
 		$("#image_zoom_cover").fadeIn(cover_fade_delay);
 	});
 });
