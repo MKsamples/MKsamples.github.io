@@ -50,6 +50,7 @@ button:focus, input:focus, textarea:focus {
 	width: 100%;
 	height: auto;
 	padding: 0px 0px;
+	overflow: hidden;
 	
 	background: #FAFAFA;
 }
