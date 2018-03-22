@@ -139,7 +139,7 @@ $(window).scroll(function() {
 		used_technologies_listener = true;
 	} 
 	
-	if ($(this).scrollTop() > ($("#used_technologies").offset().top - $(this).height()) && $(this).width() > 800) {
+	if ($(this).scrollTop() > ($("#used_technologies").offset().top - $(this).height() +100) && $(this).width() > 800) {
 		$("#scroll_top").fadeIn(page_fade);
 	} else {
 		$("#scroll_top").fadeOut(page_fade);
