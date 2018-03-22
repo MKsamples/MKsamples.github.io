@@ -210,11 +210,11 @@
 	-ms-transition: transform 225ms linear, opacity 225ms linear;
 	transition: transform 225ms linear, opacity 225ms linear;
 	
-	-webkit-transform-origin: 0%;
-	-moz-transform-origin: 0%;
-	-o-transform-origin: 0%;
-	-ms-transform-origin: 0%;
-	transform-origin: 0%;
+	-webkit-transform-origin: 0% 50%;
+	-moz-transform-origin: 0% 50%;
+	-o-transform-origin: 0% 50%;
+	-ms-transform-origin: 0% 50%;
+	transform-origin: 0% 50%;
 }
 
 #bar_top {
