@@ -60,6 +60,12 @@ function hideNavDropdown(id) {
 	active_dropdown = "";
 }
 
+$(window).resize(function() {
+	if ($(this).width() > 800) {
+		if ($("#cover").is(":visible")) $("#cover").fadeOut(nav_fade);
+	}
+});
+
 $(document).ready(function() {
 	$("#nav_small").click(function() {
 		if ($("#mobi_dropdown").is(":visible")) {
