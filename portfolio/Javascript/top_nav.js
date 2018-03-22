@@ -57,7 +57,7 @@ function hideNavDropdown(id) {
 		"opacity": "0"
 	});
 	
-	active_dropdown = ""
+	active_dropdown = "";
 }
 
 $(document).ready(function() {
@@ -65,18 +65,65 @@ $(document).ready(function() {
 		if ($("#mobi_dropdown").is(":visible")) {
 			$("#cover").fadeOut(nav_fade);
 			
-			$(this).find("i").css("color", "#FAFAFA");
+			$(this).find("div").find("span").css("background", "#FAFAFA");
+			$("#bar_top").css({
+				"width": "30px",
+				
+				"-webkit-transform": "rotate(0deg) translate(0px, 0px)",
+				"moztransform": "rotate(0deg) translate(0px, 0px)",
+				"otransform": "rotate(0deg) translate(0px, 0px)",
+				"mstransform": "rotate(0deg) translate(0px, 0px)",
+				"transform": "rotate(0deg) translate(0px, 0px)"
+			});
+			$("#bar_middle").css({
+				"filter": "alpha(opacity=100)",
+				"opacity": "100"
+			});
+			$("#bar_bottom").css({
+				"width": "30px",
+				
+				"-webkit-transform": "rotate(0deg) translate(0px, 0px)",
+				"moztransform": "rotate(0deg) translate(0px, 0px)",
+				"otransform": "rotate(0deg) translate(0px, 0px)",
+				"mstransform": "rotate(0deg) translate(0px, 0px)",
+				"transform": "rotate(0deg) translate(0px, 0px)"
+			});
+			
 			
 			$("#mobi_dropdown").slideUp(nav_slide);
 		} else {
 			$("#cover").fadeIn(nav_fade);
 			
-			$(this).find("i").css("color", "#00cc55");
+			$(this).find("div").find("span").css("background", "#00cc55");
+			$("#bar_top").css({
+				"width": "20px",
+				
+				"-webkit-transform": "rotate(45deg) translate(3px, -1px)",
+				"-moz-transform": "rotate(45deg) translate(3px, -1px)",
+				"-o-transform": "rotate(45deg) translate(3px, -1px)",
+				"-ms-transform": "rotate(45deg) translate(3px, -1px)",
+				"transform": "rotate(45deg) translate(3px, -1px)"
+			});
+			$("#bar_middle").css({
+				"filter": "alpha(opacity=0)",
+				"opacity": "0"
+			});
+			$("#bar_bottom").css({
+				"width": "20px",
+				
+				"-webkit-transform": "rotate(-45deg) translate(2px, 2px)",
+				"-moz-transform": "rotate(-45deg) translate(2px, 2px)",
+				"-o-transform": "rotate(-45deg) translate(2px, 2px)",
+				"-ms-transform": "rotate(-45deg) translate(2px, 2px)",
+				"transform": "rotate(-45deg) translate(2px, 2px)"
+			});
 			
 			$("#mobi_dropdown").slideDown(nav_slide);
 		}
 	});
 });
+
+
 
 
 
