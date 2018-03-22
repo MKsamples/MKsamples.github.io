@@ -62,73 +62,79 @@ function hideNavDropdown(id) {
 
 $(window).resize(function() {
 	if ($(this).width() > 800) {
-		if ($("#cover").is(":visible")) $("#cover").fadeOut(nav_fade);
-		if ($("#mobi_dropdown").is(":visible")) $("#nav_small").click()[0];
+		if ($("#cover").is(":visible")) hideMobNav();
 	}
 });
 
 $(document).ready(function() {
 	$("#nav_small").click(function() {
 		if ($("#mobi_dropdown").is(":visible")) {
-			$("#cover").fadeOut(nav_fade);
-			
-			$(this).find("div").find("span").css("background", "#FAFAFA");
-			$("#bar_top").css({
-				"width": "30px",
-				
-				"-webkit-transform": "rotate(0deg) translate(0px, 0px)",
-				"moztransform": "rotate(0deg) translate(0px, 0px)",
-				"otransform": "rotate(0deg) translate(0px, 0px)",
-				"mstransform": "rotate(0deg) translate(0px, 0px)",
-				"transform": "rotate(0deg) translate(0px, 0px)"
-			});
-			$("#bar_middle").css({
-				"filter": "alpha(opacity=100)",
-				"opacity": "100"
-			});
-			$("#bar_bottom").css({
-				"width": "30px",
-				
-				"-webkit-transform": "rotate(0deg) translate(0px, 0px)",
-				"moztransform": "rotate(0deg) translate(0px, 0px)",
-				"otransform": "rotate(0deg) translate(0px, 0px)",
-				"mstransform": "rotate(0deg) translate(0px, 0px)",
-				"transform": "rotate(0deg) translate(0px, 0px)"
-			});
-			
-			
-			$("#mobi_dropdown").slideUp(nav_slide);
+			hideMobNav();
 		} else {
-			$("#cover").fadeIn(nav_fade);
-			
-			$(this).find("div").find("span").css("background", "#00cc55");
-			$("#bar_top").css({
-				"width": "21px",
-				
-				"-webkit-transform": "rotate(45deg) translate(4px, 0px)",
-				"-moz-transform": "rotate(45deg) translate(4px, 0px)",
-				"-o-transform": "rotate(45deg) translate(4px, 0px)",
-				"-ms-transform": "rotate(45deg) translate(4px, 0px)",
-				"transform": "rotate(45deg) translate(4px, 0px)"
-			});
-			$("#bar_middle").css({
-				"filter": "alpha(opacity=0)",
-				"opacity": "0"
-			});
-			$("#bar_bottom").css({
-				"width": "21px",
-				
-				"-webkit-transform": "rotate(-45deg) translate(1px, 3px)",
-				"-moz-transform": "rotate(-45deg) translate(1px, 3px)",
-				"-o-transform": "rotate(-45deg) translate(1px, 3px)",
-				"-ms-transform": "rotate(-45deg) translate(1px, 3px)",
-				"transform": "rotate(-45deg) translate(1px, 3px)"
-			});
-			
-			$("#mobi_dropdown").slideDown(nav_slide);
+			showMobNav();
 		}
 	});
 });
+
+function hideMobNav() {
+	$("#cover").fadeOut(nav_fade);
+			
+	$("#nav_small").find("div").find("span").css("background", "#FAFAFA");
+	$("#bar_top").css({
+		"width": "30px",
+		
+		"-webkit-transform": "rotate(0deg) translate(0px, 0px)",
+		"moztransform": "rotate(0deg) translate(0px, 0px)",
+		"otransform": "rotate(0deg) translate(0px, 0px)",
+		"mstransform": "rotate(0deg) translate(0px, 0px)",
+		"transform": "rotate(0deg) translate(0px, 0px)"
+	});
+	$("#bar_middle").css({
+		"filter": "alpha(opacity=100)",
+		"opacity": "100"
+	});
+	$("#bar_bottom").css({
+		"width": "30px",
+		
+		"-webkit-transform": "rotate(0deg) translate(0px, 0px)",
+		"moztransform": "rotate(0deg) translate(0px, 0px)",
+		"otransform": "rotate(0deg) translate(0px, 0px)",
+		"mstransform": "rotate(0deg) translate(0px, 0px)",
+		"transform": "rotate(0deg) translate(0px, 0px)"
+	});
+	
+	$("#mobi_dropdown").slideUp(nav_slide);
+}
+
+function showMobNav() {
+	$("#cover").fadeIn(nav_fade);
+			
+	$("#nav_small").find("div").find("span").css("background", "#00cc55");
+	$("#bar_top").css({
+		"width": "21px",
+		
+		"-webkit-transform": "rotate(45deg) translate(4px, 0px)",
+		"-moz-transform": "rotate(45deg) translate(4px, 0px)",
+		"-o-transform": "rotate(45deg) translate(4px, 0px)",
+		"-ms-transform": "rotate(45deg) translate(4px, 0px)",
+		"transform": "rotate(45deg) translate(4px, 0px)"
+	});
+	$("#bar_middle").css({
+		"filter": "alpha(opacity=0)",
+		"opacity": "0"
+	});
+	$("#bar_bottom").css({
+		"width": "21px",
+		
+		"-webkit-transform": "rotate(-45deg) translate(1px, 3px)",
+		"-moz-transform": "rotate(-45deg) translate(1px, 3px)",
+		"-o-transform": "rotate(-45deg) translate(1px, 3px)",
+		"-ms-transform": "rotate(-45deg) translate(1px, 3px)",
+		"transform": "rotate(-45deg) translate(1px, 3px)"
+	});
+	
+	$("#mobi_dropdown").slideDown(nav_slide);
+}
 
 
 
