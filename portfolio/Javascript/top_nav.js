@@ -96,26 +96,26 @@ $(document).ready(function() {
 			
 			$(this).find("div").find("span").css("background", "#00cc55");
 			$("#bar_top").css({
-				"width": "20px",
+				"width": "21px",
 				
-				"-webkit-transform": "rotate(45deg) translate(3px, -1px)",
-				"-moz-transform": "rotate(45deg) translate(3px, -1px)",
-				"-o-transform": "rotate(45deg) translate(3px, -1px)",
-				"-ms-transform": "rotate(45deg) translate(3px, -1px)",
-				"transform": "rotate(45deg) translate(3px, -1px)"
+				"-webkit-transform": "rotate(45deg) translate(4px, 0px)",
+				"-moz-transform": "rotate(45deg) translate(4px, 0px)",
+				"-o-transform": "rotate(45deg) translate(4px, 0px)",
+				"-ms-transform": "rotate(45deg) translate(4px, 0px)",
+				"transform": "rotate(45deg) translate(4px, 0px)"
 			});
 			$("#bar_middle").css({
 				"filter": "alpha(opacity=0)",
 				"opacity": "0"
 			});
 			$("#bar_bottom").css({
-				"width": "20px",
+				"width": "21px",
 				
-				"-webkit-transform": "rotate(-45deg) translate(2px, 1px)",
-				"-moz-transform": "rotate(-45deg) translate(2px, 1px)",
-				"-o-transform": "rotate(-45deg) translate(2px, 1px)",
-				"-ms-transform": "rotate(-45deg) translate(2px, 1px)",
-				"transform": "rotate(-45deg) translate(2px, 1px)"
+				"-webkit-transform": "rotate(-45deg) translate(1px, 3px)",
+				"-moz-transform": "rotate(-45deg) translate(1px, 3px)",
+				"-o-transform": "rotate(-45deg) translate(1px, 3px)",
+				"-ms-transform": "rotate(-45deg) translate(1px, 3px)",
+				"transform": "rotate(-45deg) translate(1px, 3px)"
 			});
 			
 			$("#mobi_dropdown").slideDown(nav_slide);
