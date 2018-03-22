@@ -63,6 +63,7 @@ function hideNavDropdown(id) {
 $(window).resize(function() {
 	if ($(this).width() > 800) {
 		if ($("#cover").is(":visible")) $("#cover").fadeOut(nav_fade);
+		if ($("#mobi_dropdown").is(":visible")) $("#nav_small").click()[0];
 	}
 });
 
