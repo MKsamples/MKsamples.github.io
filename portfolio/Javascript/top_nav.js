@@ -111,11 +111,11 @@ $(document).ready(function() {
 			$("#bar_bottom").css({
 				"width": "20px",
 				
-				"-webkit-transform": "rotate(-45deg) translate(2px, 2px)",
-				"-moz-transform": "rotate(-45deg) translate(2px, 2px)",
-				"-o-transform": "rotate(-45deg) translate(2px, 2px)",
-				"-ms-transform": "rotate(-45deg) translate(2px, 2px)",
-				"transform": "rotate(-45deg) translate(2px, 2px)"
+				"-webkit-transform": "rotate(-45deg) translate(2px, 1px)",
+				"-moz-transform": "rotate(-45deg) translate(2px, 1px)",
+				"-o-transform": "rotate(-45deg) translate(2px, 1px)",
+				"-ms-transform": "rotate(-45deg) translate(2px, 1px)",
+				"transform": "rotate(-45deg) translate(2px, 1px)"
 			});
 			
 			$("#mobi_dropdown").slideDown(nav_slide);
