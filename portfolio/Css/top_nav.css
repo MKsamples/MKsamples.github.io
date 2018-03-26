@@ -217,6 +217,10 @@
 	-o-transform-origin: 0% 50%;
 	-ms-transform-origin: 0% 50%;
 	transform-origin: 0% 50%;
+	
+	-webkit-border-radius: 1px;
+	-moz-border-radius: 1px;
+	border-radius: 1px;
 }
 
 #bar_top {
