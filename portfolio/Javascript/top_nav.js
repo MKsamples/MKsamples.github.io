@@ -84,9 +84,9 @@ function hideMobNav() {
 		"width": "30px",
 		
 		"-webkit-transform": "rotate(0deg) translate(0px, 0px)",
-		"moztransform": "rotate(0deg) translate(0px, 0px)",
-		"otransform": "rotate(0deg) translate(0px, 0px)",
-		"mstransform": "rotate(0deg) translate(0px, 0px)",
+		"-moz-transform": "rotate(0deg) translate(0px, 0px)",
+		"-o-transform": "rotate(0deg) translate(0px, 0px)",
+		"-ms-transform": "rotate(0deg) translate(0px, 0px)",
 		"transform": "rotate(0deg) translate(0px, 0px)"
 	});
 	$("#bar_middle").css({
@@ -97,9 +97,9 @@ function hideMobNav() {
 		"width": "30px",
 		
 		"-webkit-transform": "rotate(0deg) translate(0px, 0px)",
-		"moztransform": "rotate(0deg) translate(0px, 0px)",
-		"otransform": "rotate(0deg) translate(0px, 0px)",
-		"mstransform": "rotate(0deg) translate(0px, 0px)",
+		"-moz-transform": "rotate(0deg) translate(0px, 0px)",
+		"-o-transform": "rotate(0deg) translate(0px, 0px)",
+		"-ms-transform": "rotate(0deg) translate(0px, 0px)",
 		"transform": "rotate(0deg) translate(0px, 0px)"
 	});
 	
