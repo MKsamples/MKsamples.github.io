@@ -105,8 +105,8 @@ function animateContainers(id) {
 	});
 }
 
-function getContainerTopPosition(id) {
-	return $(id).offset().top - $(window).height() - 100 + ($(id).outerHeight() * (2 / 3));
+function isContainerInViewport(id) {
+	return ($(window).scrollTop() + ($(window).height() / 2)) > $(id).offset().top;
 }
 
 var about_me_listener = false;
@@ -115,25 +115,25 @@ var samples_listener = false;
 var used_technologies_listener = false;
 
 $(window).scroll(function() {
-	if (!about_me_listener && $(this).scrollTop() > getContainerTopPosition("#about_me")) {
+	if (!about_me_listener && isContainerInViewport("#about_me")) {
 		animateContainers("#about_me");
 		
 		about_me_listener = true;
 	} 
 	
-	if (!design_principles_listener && $(this).scrollTop() > getContainerTopPosition("#design_principles")) {
+	if (!design_principles_listener && isContainerInViewport("#design_principles")) {
 		animateContainers("#design_principles");
 		
 		design_principles_listener = true;
 	}
 	
-	if (!samples_listener && $(this).scrollTop() > getContainerTopPosition("#samples")) {
+	if (!samples_listener && isContainerInViewport("#samples")) {
 		animateContainers("#samples");
 		
 		samples_listener = true;
 	} 
 	
-	if (!used_technologies_listener && $(this).scrollTop() > getContainerTopPosition("#used_technologies")) {
+	if (!used_technologies_listener && isContainerInViewport("#used_technologies")) {
 		animateLogos();
 		
 		used_technologies_listener = true;
@@ -145,7 +145,4 @@ $(window).scroll(function() {
 		$("#scroll_top").fadeOut(page_fade);
 	}
 });
-
-
-
 
