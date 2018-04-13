@@ -73,6 +73,12 @@ $(document).ready(function() {
 });
 
 function hideMobNav() {
+	$("#nav").css({
+		"-webkit-box-shadow": "0px 3px 10px rgba(19, 22, 32, 0.4)",
+		"-moz-box-shadow": "0px 3px 10px rgba(19, 22, 32, 0.4)",
+		"box-shadow": "0px 3px 10px rgba(19, 22, 32, 0.4)"
+	});
+	
 	$("#cover").fadeOut(nav_fade);
 			
 	$("#nav_small").find("div").find("span").css("background", "#FAFAFA");
@@ -103,6 +109,12 @@ function hideMobNav() {
 }
 
 function showMobNav() {
+	$("#nav").css({
+		"-webkit-box-shadow": "none",
+		"-moz-box-shadow": "none",
+		"box-shadow": "none"
+	});
+	
 	$("#cover").fadeIn(nav_fade);
 			
 	$("#nav_small").find("div").find("span").css("background", "#00cc55");
