@@ -106,11 +106,7 @@ function animateContainers(id) {
 }
 
 function getContainerTopPosition(id) {
-	var pos = $(id).offset().top - $(window).height() + $(id).height();
-	
-	if ($(window).width() > 800) pos = pos * (2 / 3);
-	
-	return pos;
+	return $(id).offset().top - $(window).height() + ($(id).outerHeight() * (2 / 3));
 }
 
 var about_me_listener = false;
