@@ -106,7 +106,11 @@ function animateContainers(id) {
 }
 
 function getContainerTopPosition(id) {
-	return $(id).offset().top - $(window).height() + ($(id).height() * (1 / 2));
+	var pos = $(id).offset().top - $(window).height() + $(id).height();
+	
+	if ($(window).width() > 800) pos = pos * (2 / 3);
+	
+	return pos;
 }
 
 var about_me_listener = false;
