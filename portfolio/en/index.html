@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<title>Martin Kitsemägi portfolio</title>
+
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no"/>
+	<meta name="description" content="
+		Martin Kitsemägi, freelance web designer & developer."/>
+	<meta name="keywords" content="HTML, CSS, PHP, AJAX, JQuery, Javascript, Wordpress"/>
+	<meta name="author" content="Martin Kitsemägi"/>
+	
+	<link rel="icon" type="image/png" href="../Images/icon.png"/>
+	
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Damion" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet"/>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"/>
+	
+	<link href="../Css/font-awesome_5.0.8/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+	<link href="../Css/bootstrap_4.0.0/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+	<link href="../Css/bootstrap_4.0.0/css/bootstrap-grid.min.css" rel="stylesheet" type="text/css"/>
+	
+	<link href="../Css/page.css" rel="stylesheet" type="text/css"/>
+	<link href="../Css/top_nav.css" rel="stylesheet" type="text/css"/>
+	<link href="../Css/about_me.css" rel="stylesheet" type="text/css"/>
+	<link href="../Css/design_principles.css" rel="stylesheet" type="text/css"/>
+	<link href="../Css/samples.css" rel="stylesheet" type="text/css"/>
+	<link href="../Css/used_technologies.css" rel="stylesheet" type="text/css"/>
+	<link href="../Css/footer.css" rel="stylesheet" type="text/css"/>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="../Css/bootstrap_4.0.0/js/bootstrap.bundle.min.js"></script>
+	
+	<script src="../Javascript/page.js"></script>
+	<script src="../Javascript/top_nav.js"></script>
+	<script src="../Javascript/used_technologies.js"></script>
+</head>
+<body>
+	<div id="page_wrapper" class="container-fluid">
+		<div id="cover"></div>
+		<div id="scroll_top" data-toggle="tooltip" data-placement="left" title="Back to top">
+			<div>
+				<i class="fas fa-chevron-up"></i>
+			</div>
+		</div>
+	
+		<div id="top_nav" class="no_text_select">
+			<div id="nav">
+				<div class="container">
+					<span class="logo">
+						Mk
+					</span>
+					
+					<ul id="nav_wide">
+						<li onclick="scrollToElement('#about_me')">About me</li>
+						<li onclick="scrollToElement('#samples')">Samples</li>
+						<li id="lang_dropdown" class="nav_dropdown">
+							Language<i class="fas fa-sort-down"></i>
+							
+							<ul>
+								<a href="https://MartinKitsemagi.github.io/portfolio/"><li>Estonian</li></a>
+								<a href="https://MartinKitsemagi.github.io/portfolio/en"><li class="nav_dropdown_bottom">English</li></a>
+							</ul>
+						</li>
+					</ul>
+					
+					<span id="nav_small">
+						<div id="bar_wrapper">
+							<span id="bar_top"></span>
+							<span id="bar_middle"></span>
+							<span id="bar_bottom"></span>
+						</div>
+						
+						<ul id="mobi_dropdown">
+							<li onclick="scrollToElement('#about_me')">About me</li>
+							<li onclick="scrollToElement('#samples')">Samples</li>
+							
+							<div></div>
+							
+							<a href="https://MartinKitsemagi.github.io/portfolio/"><li>In Estonian</li></a>
+							<a href="https://MartinKitsemagi.github.io/portfolio/en"><li>In English</li></a>
+						</ul>
+					</span>
+				</div>
+			</div>
+			<div id="header">
+				<h1 id="header_title">Martin Kitsemägi portfolio</h1>
+			</div>
+			
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+				<path d="M761.9,40.6L643.1,24L333.9,93.8L0.1,1H0v99h1000V1"></path>
+			</svg>
+		</div>
+	
+		<div id="about_me">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 fade_block_l">
+						<span>About me</span>
+						<p>
+							Hey, Martin here. In 2016 I got my degree in computer science from the Tallinn University of Technology.
+							Currently I am looking to work on smaller projects as a freelance developer or for a temporary job in one of Estonian IT-companies.
+							My primary focus is on developing and designing websites/user interfaces. 
+							As a hobby and during my time in university, I realized different projects that involved databases and web applications.
+							I always keep pushing myself to learn new skills and to stay up to date with the best solutions in my field.
+						</p>
+					</div>
+					<div class="col-lg-6 fade_block_r">
+						<span>How to contact me?</span>
+						<p>
+							The best way to contact me is via email: <b>martin.kitsemmagi@gmail.com</b>.<br><br>
+							You can also find my CV on <a href="https://www.cvkeskus.ee/m_cvs.php?op=preview&cv_id=1517632">cvkeskus.ee</a> or <a href="https://www.cv.ee/CVC/5800327.html">cv.ee</a>.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<div id="design_principles">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+				<path opacity="0.33" d="M473,67.3c-203.9,88.3-263.1-34-320.3,0C66,119.1,0,59.7,0,59.7V0h1000v59.7 c0,0-62.1,26.1-94.9,29.3c-32.8,3.3-62.8-12.3-75.8-22.1C806,49.6,745.3,8.7,694.9,4.7S492.4,59,473,67.3z"></path>
+				<path opacity="0.66" d="M734,67.3c-45.5,0-77.2-23.2-129.1-39.1c-28.6-8.7-150.3-10.1-254,39.1 s-91.7-34.4-149.2,0C115.7,118.3,0,39.8,0,39.8V0h1000v36.5c0,0-28.2-18.5-92.1-18.5C810.2,18.1,775.7,67.3,734,67.3z"></path>
+				<path d="M766.1,28.9c-200-57.5-266,65.5-395.1,19.5C242,1.8,242,5.4,184.8,20.6C128,35.8,132.3,44.9,89.9,52.5C28.6,63.7,0,0,0,0 h1000c0,0-9.9,40.9-83.6,48.1S829.6,47,766.1,28.9z"></path>
+			</svg>
+		
+			<div class="container">
+				<h2 id="design_principles_title"><b>Values</b> that I appreciate</h2>
+			
+				<div id="cards" class="container">
+					<div class="row">
+						<div class="col-lg-6 fade_block_l">
+							<div class="container">
+								<div class="row">
+									<div class="col-3">
+										<i class="fas fa-desktop"></i>
+									</div>
+									<div class="col-9">
+										<span>Responsive design</span>
+										<p>It is important for me, that my websites look good on all screen sizes.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 fade_block_r">
+							<div class="container">
+								<div class="row">
+									<div class="col-3">
+										<i class="far fa-user"></i>
+									</div>
+									<div class="col-9">
+										<span>User friendly solutions</span>
+										<p>I pay attention to developing user interfaces, that are easy to use and understand.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-6 fade_block_l">
+							<div class="container">
+								<div class="row">
+									<div class="col-3">
+										<i class="fas fa-mobile-alt"></i>
+									</div>
+									<div class="col-9">
+										<span>Cross-platform compatibility</span>
+										<p>I create solutions, that have cross-browser and cross-platform compatibility.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 fade_block_r">
+							<div class="container">
+								<div class="row">
+									<div class="col-3">
+										<i class="fab fa-pushed"></i>
+									</div>
+									<div class="col-9">
+										<span>Minimalistic approach</span>
+										<p>I keep my webpages noise free and focus only on displaying necessary information.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="samples">
+			<div class="container line"></div>
+			<h2 id="samples_header">Samples</h2>
+			<p>Take a look at recently created website samples.</p>
+		
+			<div class="container no_text_select">
+				<div class="row">
+					<div class="col-lg-3 fade_block_t">
+						<div id="sample_company" class="container">
+							<div></div>
+							<a href="https://MartinKitsemagi.github.io/sample_company/en" target="_blank">
+								<span>Company</span>
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-3 fade_block_t">
+						<div id="sample_gallery" class="container">
+							<div></div>
+							<a href="https://MartinKitsemagi.github.io/sample_gallery/en" target="_blank">
+								<span>Gallery</span>
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-3 fade_block_t">
+						<div id="sample_animal_park" class="container">
+							<div></div>
+							<a href="https://MartinKitsemagi.github.io/sample_animal_park/en" target="_blank">
+								<span>Animal park</span>
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-3 fade_block_t">
+						<div id="sample_cube" class="container">
+							<div></div>
+							<a href="https://MartinKitsemagi.github.io/sample_cube/" target="_blank">
+								<span>The cube</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="used_technologies">
+			<div class="container">
+				<h2 id="used_technologies_title"><b>Technologies</b> that I use</h2>
+				<p id="used_technologies_description">Primary resources, that help to carry out my solutions</p>
+				
+				<div id="logos" class="row justify-content-center no_text_select">
+					<div class="col-auto" data-toggle="tooltip" data-placement="top" title="HTML5">
+						<i class="fab fa-html5"></i>
+					</div>
+					<div class="col-auto" data-toggle="tooltip" data-placement="top" title="CSS3">
+						<i class="fab fa-css3-alt"></i>
+					</div>
+					<div class="col-auto" data-toggle="tooltip" data-placement="top" title="Javascript">
+						<i class="fab fa-js-square"></i>
+					</div>
+					<div class="col-auto" data-toggle="tooltip" data-placement="top" title="Font Awesome">
+						<i class="fab fa-font-awesome"></i>
+					</div>
+					<div class="col-auto" data-toggle="tooltip" data-placement="top" title="Wordpress">
+						<i class="fab fa-wordpress-simple"></i>
+					</div>
+					<div class="col-auto" data-toggle="tooltip" data-placement="top" title="PHP">
+						<i class="fab fa-php"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="footer_svg">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+				<path d="M761.9,44.1L643.1,27.2L333.8,98L0,3.8V0l1000,0v3.9"></path>
+			</svg>
+		</div>
+		
+		<div id="footer">
+			<div class="container">
+				<span>Contact me: <b>martin.kitsemmagi@gmail.com</b></span>
+				
+				<div>
+					<span>
+						<p class="logo">
+							Mk
+						</p>
+						<p>2018</p>
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

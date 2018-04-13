@@ -1,0 +1,80 @@
+
+#used_technologies {
+	width: 100%;
+	height: auto;
+	padding: 75px 20px;
+	
+	background: #1c2230;
+	text-align: center;
+}
+
+#used_technologies h2 {
+	margin-bottom: 75px;
+}
+
+#used_technologies p {
+	width: 90%;
+	height: auto;
+	display: block;
+	margin: 0px auto 50px auto;
+	
+	font-family: "Roboto Condensed", sans-serif;
+	text-align: center;
+	font-size: 20px;
+	color: #FAFAFA;
+	font-weight: 500;
+	letter-spacing: 1px;
+}
+
+#used_technologies .row div {
+	width: 150px;
+	height: 150px;
+
+	text-align: center;
+}
+
+#used_technologies .row div i {
+	width: auto;
+	height: auto;
+	display: inline-block;
+	
+	color: #00cc55;
+	font-size: 0px;
+	text-shadow: 0px 1px 1px #008035;
+	line-height: 150px;
+	
+	-webkit-transition: all 275ms ease-out;
+	-moz-transition: all 275ms ease-out;
+	-o-transition: all 275ms ease-out;
+	-ms-transition: all 275ms ease-out;
+	transition: all 275ms ease-out;
+}
+
+#used_technologies .row i:hover {
+	cursor: pointer;
+	
+	color: #009940;
+	
+	-webkit-transition: color 125ms ease-out;
+	-moz-transition: color 125ms ease-out;
+	-o-transition: color 125ms ease-out;
+	-ms-transition: color 125ms ease-out;
+	transition: color 125ms ease-out;
+}
+
+@media screen and (max-width: 980px) {
+	#used_technologies .row div {
+		width: 125px;
+		height: 125px;
+	}
+}
+
+@media screen and (max-width: 315px) {
+	#used_technologies .row div {
+		width: 115px;
+		height: 115px;
+	}
+}
+
+
+
