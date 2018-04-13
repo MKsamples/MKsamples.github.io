@@ -9,17 +9,6 @@
 	background: #f9f9fb;
 }
 
-#about_me i {
-	width: auto;
-	height: auto;
-	position: absolute;
-	top: -562px;
-	left: -562px;
-	
-	color: #eff2f5;
-	font-size: 1028px;
-}
-
 #about_me .container {
 	padding: 0px 0px;
 }
