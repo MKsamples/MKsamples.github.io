@@ -39,7 +39,7 @@ function textFade(id) {
 function scrollToElement($element) {
 	if (!/Mobi/.test(navigator.userAgent)) {
 		$("html, body").animate({
-			scrollTop: $($element).offset().top
+			scrollTop: $($element).offset().top - $("#nav").height()
 		}, 500);
 	} else {
 		$("html, body").scrollTop($($element).offset().top);
