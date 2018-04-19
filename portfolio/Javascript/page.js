@@ -1,22 +1,22 @@
 
-var page_fade = 150;
-var page_queue = 125;
+const page_fade = 150;
+const page_queue = 125;
 
-var char_fade = 25;
-var char_transition = 150;
+const char_fade = 25;
+const char_transition = 150;
 
 function textFade(id) {
-	var text = $(id).html();
+	let text = $(id).html();
 	
-	var tmp = "";
-	var open = true;
+	let tmp = "";
+	let open = true;
 	
-	for (var i = 0; i < text.length; i++) {
-		if (text.charAt(i) == "<" || text.charAt(i) == ">") {
+	for (let i = 0; i < text.length; i++) {
+		if (text.charAt(i) === "<" || text.charAt(i) === ">") {
 			open = !open;
 		}
 		
-		if (open && text.charAt(i) != ">") tmp += "<span class='faded'>" + text.charAt(i) + "</span>";
+		if (open && text.charAt(i) !== ">") tmp += "<span class='faded'>" + text.charAt(i) + "</span>";
 		else tmp += text.charAt(i);
 	}
 	
