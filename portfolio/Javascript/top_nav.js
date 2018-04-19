@@ -1,6 +1,6 @@
 
-var nav_fade = 150;
-var nav_slide = 400;
+const nav_fade = 150;
+const nav_slide = 400;
 var active_dropdown = "";
 
 $(document).ready(function() {
@@ -14,16 +14,16 @@ $(document).ready(function() {
 $(document).ready(function() {
 	$(".nav_dropdown").on({
 		mouseenter: function() {
-			var tmp_id = $(this).attr("id");
+			let tmp_id = $(this).attr("id");
 			
 			if ($(this).find("ul").height() <= 0) {
-				if (active_dropdown != "" && active_dropdown != tmp_id) hideNavDropdown(active_dropdown);
+				if (active_dropdown !== "" && active_dropdown !== tmp_id) hideNavDropdown(active_dropdown);
 				
 				showNavDropdown(tmp_id);
 			}
 		},
 		mouseleave: function() {
-			if (active_dropdown != "") hideNavDropdown(active_dropdown);
+			if (active_dropdown !== "") hideNavDropdown(active_dropdown);
 		}	
 	});
 });
