@@ -22,14 +22,14 @@ function featured_init(){
 		let screen_width = $(window).width();
 		
 		if (screen_width < 1200) {
-			if ($(".featured_buttons").filter(":hidden")) {
+			if ($(".featured_buttons").css("display") === "none") {
 				$(".featured_buttons").fadeIn();
 			
 				clear_featured_buttons();
 				$("#f_left").css("background-color", "#202020");
 			}
 		} else {
-			if ($(".featured_buttons").filter(":visible")) {
+			if ($(".featured_buttons").css("display") === "block") {
 				$(".featured_buttons").fadeOut();
 				
 				$(".featured_items").css("margin-left", "0px");
