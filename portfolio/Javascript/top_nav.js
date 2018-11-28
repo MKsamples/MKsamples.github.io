@@ -14,7 +14,7 @@ $(document).ready(function() {
 $(document).ready(function() {
 	$(".nav_dropdown").on({
 		mouseenter: function() {
-			let tmp_id = $(this).attr("id");
+			var tmp_id = $(this).attr("id");
 			
 			if ($(this).find("ul").height() <= 0) {
 				if (active_dropdown !== "" && active_dropdown !== tmp_id) hideNavDropdown(active_dropdown);
