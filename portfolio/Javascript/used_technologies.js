@@ -1,6 +1,6 @@
 
-const logo_size = "calc(64px + 2vw)";
-const logo_delay = 125;
+var logo_size = "calc(64px + 2vw)";
+var logo_delay = 125;
 
 function animateLogos() {
 	$("#logos").children("div").each(function(index) {
