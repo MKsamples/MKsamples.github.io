@@ -1,9 +1,9 @@
 
-const page_fade = 150;
-const page_queue = 125;
+var page_fade = 150;
+var page_queue = 125;
 
-const char_fade = 25;
-const char_transition = 150;
+var char_fade = 25;
+var char_transition = 150;
 
 function textFade(id) {
 	var text = $(id).html();
