@@ -6,12 +6,12 @@ const char_fade = 25;
 const char_transition = 150;
 
 function textFade(id) {
-	let text = $(id).html();
+	var text = $(id).html();
 	
-	let tmp = "";
-	let open = true;
+	var tmp = "";
+	var open = true;
 	
-	for (let i = 0; i < text.length; i++) {
+	for (var i = 0; i < text.length; i++) {
 		if (text.charAt(i) === "<" || text.charAt(i) === ">") {
 			open = !open;
 		}
