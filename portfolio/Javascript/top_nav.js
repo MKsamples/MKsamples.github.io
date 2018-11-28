@@ -1,6 +1,6 @@
 
-const nav_fade = 150;
-const nav_slide = 400;
+var nav_fade = 150;
+var nav_slide = 400;
 var active_dropdown = "";
 
 $(document).ready(function() {
